@@ -1,13 +1,13 @@
 Contributing
 ============
 
-Create virtualenv: `python3 -m venv .venv`
-Activate it: `source .venv/bin/activate`
-Install packages: `pip3 install -r requirements.txt`
-Run DB Migrations: `python3 manage.py migrate`
-Seed DB with some mock data: `python3 manage.py shell < seed_db.py`
-Create a super user to access admin site: `python3 manage.py createsuperuser`
-Run the server: `python3 manage.py runserver`
+* Create virtualenv: `python3 -m venv .venv`
+* Activate it: `source .venv/bin/activate`
+* Install packages: `pip3 install -r requirements.txt`
+* Run DB Migrations: `python3 manage.py migrate`
+* Seed DB with some mock data: `python3 manage.py shell < seed_db.py`
+* Create a super user to access admin site: `python3 manage.py createsuperuser`
+* Run the server: `python3 manage.py runserver`
 
 Notes
 =====
@@ -35,7 +35,7 @@ API
 
 There is a read-only songs API allows listing of songs at /songs/, and song detail view at /songs/{song_id}.  
 A song body looks like this:
-   {
+    {
         "id": 1,
         "name": "Oye Como Va",
         "album_name": "Abraxas",
