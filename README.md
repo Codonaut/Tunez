@@ -45,13 +45,3 @@ Data Models
 The Artist, Album, and Song models are all pretty straightforward.  A song has an album, and an album has an artist.
 
 The Library model is the more interesting one (by a bit).  It is a mapping table between Users and Songs, and it represents a user's Library.  In retrospect I would've named it UserSong(similar to the API view name) so I can avoid wonky code like `libraries = Library.objects.filter(user=request.user)`.  I think we can all agree `libraries` is a bad name here.  But, I don't feel like taking the time to go back.
-
-Notes to the Reader
-===================
-
-* Normally I'd make sure I didn't have things like unused imports.  On this project I didn't.
-* Normally I'd make sure the home page literally serves any purpose at all, and doesn't have broken links.
-
-This is a silly take-home challenge.  It took me ~5 hours, even though I said I'd spend maximum 3.  How did I spend that time?  Well, spinning up a new project takes time, since that is such a small part of what I do as an engineer.  Then of course there was the time to bang around re-familiarizing myself with Django Rest Framework.  With all of that time I've created a just-barely-works API.  What does this show you guys?  Well, I know how to glue stuff together-- you can tell that much.  So your signal shows that I kind of know what I'm doing... and in order to generate that signal I spent 5 hours of my time.  In retrospect I wish I hadn't, and I'm a little annoyed that I did.  Expecting candidates to spend 5+ hours on a take-home challenge is completely unrealistic, especially when hiring in a tough (for employers) market like SF.
-
-If I end up working with you guys then I will strongly push for removing (or heavily changing) this aspect of interviewing.
